@@ -87,7 +87,7 @@ export default function Kontakt() {
               <div className="mt-10 pt-8 border-t">
                 <h3 className="font-semibold text-gray-900 mb-4">Følg oss på sosiale medier</h3>
                 <a
-                  href="https://facebook.com/olelovoldas"
+                  href="https://www.facebook.com/profile.php?id=100057478448711"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition-colors"
