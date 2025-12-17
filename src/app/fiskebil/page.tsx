@@ -7,10 +7,15 @@ export const metadata: Metadata = {
   description: 'Finn fiskebilen til Ole Løvold AS i ditt område. Vi leverer fersk fisk på Sunnmøre, Østlandet, Trøndelag, Nordmøre og Romsdal.',
 }
 
-const areas = [
+type Area = {
+  name: string
+  phones: string[]
+}
+
+const areas: Area[] = [
   {
     name: 'Sunnmøre',
-    phone: '911 72 372',
+    phones: ['911 72 372'],
   },
   {
     name: 'Østlandsområdet',
@@ -18,11 +23,11 @@ const areas = [
   },
   {
     name: 'Trøndelag',
-    phone: '911 40 910',
+    phones: ['911 40 910'],
   },
   {
     name: 'Nordmøre og Romsdal',
-    phone: '950 65 496',
+    phones: ['950 65 496'],
   },
 ]
 
@@ -72,32 +77,20 @@ export default function Fiskebil() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-gray-900 mb-3">{area.name}</h3>
-                    {'phones' in area ? (
-                      <div className="space-y-2">
-                        {area.phones.map((phone, i) => (
-                          <a
-                            key={i}
-                            href={`tel:${phone.replace(/\s/g, '')}`}
-                            className="flex items-center gap-2 text-blue-800 hover:text-blue-900 font-medium"
-                          >
-                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
-                            {phone}
-                          </a>
-                        ))}
-                      </div>
-                    ) : (
-                      <a
-                        href={`tel:${area.phone.replace(/\s/g, '')}`}
-                        className="flex items-center gap-2 text-blue-800 hover:text-blue-900 font-medium"
-                      >
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                        </svg>
-                        {area.phone}
-                      </a>
-                    )}
+                    <div className="space-y-2">
+                      {area.phones.map((phone, i) => (
+                        <a
+                          key={i}
+                          href={`tel:${phone.replace(/\s/g, '')}`}
+                          className="flex items-center gap-2 text-blue-800 hover:text-blue-900 font-medium"
+                        >
+                          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                          </svg>
+                          {phone}
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
