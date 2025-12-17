@@ -204,7 +204,7 @@ function FishTruckCTA() {
           Finn nærmeste fiskebil
         </h2>
         <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-          Våre fiskebiler kjører faste ruter i nærområdet. Finn ut når vi er i nærheten av deg!
+          Våre fiskebiler kjører i flere områder. Ring din lokale fiskebil for informasjon!
         </p>
         <Link
           href="/fiskebil"
