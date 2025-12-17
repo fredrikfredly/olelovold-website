@@ -26,8 +26,8 @@ function Hero() {
             Fersk fisk fra <span className="text-red-400">havet til ditt bord</span>
           </h1>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-            I 45 år har vi levert førsteklasses fisk og fiskeprodukter til fornøyde kunder.
-            Som familiebedrift setter vi kvalitet og tradisjon i høysetet.
+            I over 40 år har vi vært landsledende på produksjon og omsetning av fisk og fiskemat.
+            Fra vårt anlegg ytterst i havgapet leverer vi kvalitet til hele Norge.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/fiskebil" className="bg-white text-blue-900 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors text-center shadow-lg">
@@ -46,10 +46,10 @@ function Hero() {
 // Stats Section
 function Stats() {
   const stats = [
-    { number: '45+', label: 'År med erfaring' },
-    { number: '18', label: 'Dyktige ansatte' },
-    { number: '1000+', label: 'Fornøyde kunder' },
-    { number: '3', label: 'Generasjoner' },
+    { number: '40+', label: 'År med erfaring' },
+    { number: '20', label: 'Ansatte' },
+    { number: '50+', label: 'Produktvarianter' },
+    { number: '1998', label: 'EU-sertifisert' },
   ]
 
   return (
@@ -93,9 +93,9 @@ function AboutPreview() {
               En stolt familiebedrift i tre generasjoner
             </h2>
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-              Ole Løvold AS ble grunnlagt av Ole Ingvar Løvold, og i dag drives bedriften i samarbeid
-              med tre av hans sønner. Med 45 års erfaring har vi bygget opp en solid kompetanse
-              innen fisk og fiskeprodukter.
+              Fra énmannsforetak til landsledende - i dag har vi 20 ansatte og er ledende på
+              produksjon og omsetning av fisk og fiskemat. Vårt anlegg på Langøya i Averøy har
+              storhavet som nærmeste nabo.
             </p>
             <Link
               href="/om-oss"
