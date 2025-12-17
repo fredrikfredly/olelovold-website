@@ -22,7 +22,7 @@ export default function Kontakt() {
       {/* Contact Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="max-w-2xl mx-auto">
             {/* Contact Info */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -106,94 +106,6 @@ export default function Kontakt() {
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="bg-white rounded-3xl shadow-lg p-8 md:p-10">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Send oss en melding</h3>
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Navn *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                    placeholder="Ditt navn"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    E-post *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                    placeholder="din@epost.no"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Telefon
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                    placeholder="Ditt telefonnummer"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                    Emne
-                  </label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                  >
-                    <option value="">Velg emne</option>
-                    <option value="bestilling">Bestilling</option>
-                    <option value="fiskebil">Fiskebil/ruter</option>
-                    <option value="produkter">Spørsmål om produkter</option>
-                    <option value="annet">Annet</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Melding *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"
-                    placeholder="Skriv din melding her..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-red-700 text-white py-4 rounded-xl font-semibold hover:bg-red-800 transition-colors"
-                >
-                  Send melding
-                </button>
-
-                <p className="text-sm text-gray-500 text-center">
-                  * Obligatoriske felt
-                </p>
-              </form>
-            </div>
           </div>
         </div>
       </section>
