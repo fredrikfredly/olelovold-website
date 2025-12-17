@@ -33,9 +33,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Kontakt</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Adresse kommer</li>
-              <li>Telefon kommer</li>
-              <li>E-post kommer</li>
+              <li>Langøyneset, 6530 Averøy</li>
+              <li><a href="tel:+4771517650" className="hover:text-white">+47 71 51 76 50</a></li>
+              <li><a href="mailto:firmapost@olelovold.no" className="hover:text-white">firmapost@olelovold.no</a></li>
             </ul>
           </div>
         </div>
