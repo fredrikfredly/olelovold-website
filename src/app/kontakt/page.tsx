@@ -76,7 +76,7 @@ export default function Kontakt() {
                 <div className="bg-gray-50 rounded-2xl p-6">
                   <h3 className="font-bold text-gray-900 mb-4 text-lg">Besøk oss</h3>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=Langøyneset,+6530+Averøy"
+                    href="https://www.google.com/maps/search/?api=1&query=Reksundveien+151,+6533+Averøy"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-gray-700 hover:text-blue-800"
@@ -84,7 +84,7 @@ export default function Kontakt() {
                     <svg className="w-5 h-5 text-blue-800" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                     </svg>
-                    Langøyneset, 6530 Averøy
+                    Reksundveien 151, 6533 Averøy
                   </a>
                 </div>
               </div>
@@ -198,15 +198,24 @@ export default function Kontakt() {
         </div>
       </section>
 
-      {/* Map Section (Placeholder) */}
+      {/* Map Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Finn oss</h2>
-            <p className="text-gray-600">Besøk oss på vårt anlegg</p>
+            <p className="text-gray-600">Reksundveien 151, 6533 Averøy</p>
           </div>
-          <div className="bg-gray-200 rounded-3xl h-96 flex items-center justify-center">
-            <p className="text-gray-500">Kart kommer her</p>
+          <div className="rounded-3xl overflow-hidden shadow-lg h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1788.5!2d7.7391!3d63.0447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjPCsDAyJzQxLjAiTiA3wrA0NCcyMC44IkU!5e0!3m2!1sno!2sno!4v1!5m2!1sno!2sno&q=Reksundveien+151,+6533+Averøy,+Norway"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ole Løvold AS lokasjon"
+            ></iframe>
           </div>
         </div>
       </section>
