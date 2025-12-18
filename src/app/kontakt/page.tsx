@@ -1,8 +1,12 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kontakt oss - Ole Løvold AS',
-  description: 'Ta kontakt med Ole Løvold AS for bestilling av fersk fisk eller spørsmål om våre produkter.',
+  title: 'Kontakt oss',
+  description: 'Kontakt Ole Løvold AS. Bestilling: ordre@olelovold.no, tlf 71 51 76 50. Besøksadresse: Reksundveien 151, 6533 Averøy.',
+  openGraph: {
+    title: 'Kontakt Ole Løvold AS',
+    description: 'Ta kontakt for bestilling av fersk fisk. Tlf: 71 51 76 50.',
+  },
 }
 
 export default function Kontakt() {

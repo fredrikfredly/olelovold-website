@@ -2,8 +2,12 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Om oss - Ole Løvold AS',
-  description: 'Les om Ole Løvold AS - landsledende på produksjon og omsetning av fisk og fiskemat. EU-sertifisert siden 1998.',
+  title: 'Om oss',
+  description: 'Ole Løvold AS - landsledende på fisk og fiskemat siden 1979. Fra énmannsforetak til 20 ansatte. EU-sertifisert siden 1998. Moderne anlegg på Averøy.',
+  openGraph: {
+    title: 'Om Ole Løvold AS - Vår historie',
+    description: 'Landsledende på fisk og fiskemat siden 1979. Les om vår historie fra Averøy.',
+  },
 }
 
 export default function OmOss() {

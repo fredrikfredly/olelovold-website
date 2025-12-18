@@ -3,8 +3,12 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Produkter - Ole Løvold AS',
-  description: 'Se vårt utvalg av fersk fisk og fiskeprodukter. Laksefilet, torskefilet, kveiteskiver, brosmefilet og mer.',
+  title: 'Produkter',
+  description: 'Over 50 varianter fersk fisk og fiskemat. Laksefilet, torskefilet, kveiteskiver, brosmefilet, uerfilet og mer. Kvalitet fra Averøy siden 1979.',
+  openGraph: {
+    title: 'Våre produkter - Fersk fisk fra Ole Løvold AS',
+    description: 'Over 50 varianter fersk fisk og fiskemat fra Averøy. Se vårt utvalg.',
+  },
 }
 
 const products = [

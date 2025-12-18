@@ -3,8 +3,12 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Finn fiskebil - Ole Løvold AS',
-  description: 'Finn fiskebilen til Ole Løvold AS i ditt område. Vi leverer fersk fisk på Sunnmøre, Østlandet, Trøndelag, Nordmøre og Romsdal.',
+  title: 'Finn fiskebil',
+  description: 'Fiskebil med fersk fisk i ditt område. Ring fiskebilen på Sunnmøre, Østlandet, Trøndelag, Nordmøre eller Romsdal. Ole Løvold AS leverer kvalitetsfisk.',
+  openGraph: {
+    title: 'Finn fiskebil - Ole Løvold AS',
+    description: 'Fersk fisk levert til døren. Finn fiskebilen i ditt område.',
+  },
 }
 
 type Area = {
