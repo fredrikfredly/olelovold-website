@@ -110,27 +110,6 @@ export default function Kontakt() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Finn oss</h2>
-            <p className="text-gray-600">Reksundveien 151, 6533 Averøy</p>
-          </div>
-          <div className="rounded-3xl overflow-hidden shadow-lg h-96">
-            <iframe
-              src="https://maps.google.com/maps?q=Reksundveien%20151%2C%206533%20Aver%C3%B8y%2C%20Norway&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Ole Løvold AS lokasjon"
-            ></iframe>
-          </div>
-        </div>
-      </section>
     </main>
   )
 }
